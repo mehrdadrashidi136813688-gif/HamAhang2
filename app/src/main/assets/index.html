@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#542c45"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>هماهنگ | خدمات مراسم</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+ <div class="brand"><div class="brandmark">ه</div><div><b>هماهنگ</b><small>مراسمت، با سلیقه تو</small></div></div>
+ <button class="profile" onclick="show('profile')">♙</button>
+</header>
+<main>
+<section id="home" class="screen active">
+ <div class="hero">
+  <div class="hero-text"><span class="kicker">برای روزهای به‌یادماندنی</span><h1>همه خدمات مراسم،<br><em>یک‌جا و هماهنگ</em></h1>
+  <p>خدمات موردنظرت را پیدا کن، نمونه‌کارها را ببین و قیمت‌ها را مقایسه کن.</p>
+  <button class="hero-btn" onclick="show('categories')">شروع انتخاب خدمات <span>←</span></button></div>
+  <div class="hero-visual"><div class="ring"></div><div class="bouquet">💐</div><div class="spark s1">✦</div><div class="spark s2">✧</div></div>
+ </div>
+ <div class="searchbar"><span>⌕</span><input id="searchInput" placeholder="نام خدمت یا ارائه‌دهنده را جستجو کن"><button onclick="searchCategories()">جستجو</button></div>
+ <div class="section-title"><div><small>انتخاب آسان</small><h2>دسته‌بندی خدمات</h2></div><button class="text-btn" onclick="show('categories')">همه خدمات ←</button></div>
+ <div class="category-grid home-grid" id="homeCategories"></div>
+ <div class="tip"><span>✨</span><div><b>پیشنهاد هماهنگ</b><p>با انتخاب دسته‌ها، ارائه‌دهندگان و پکیج‌ها را با هم مقایسه کن.</p></div></div>
+</section>
+<section id="categories" class="screen">
+ <div class="page-head"><span class="kicker">هر خدمت، یک بخش مستقل</span><h1>خدمات مراسم</h1><p>دسته موردنظرت را انتخاب کن تا ارائه‌دهندگان آن را ببینی.</p></div>
+ <div class="category-grid full-grid" id="allCategories"></div>
+</section>
+<section id="categoryDetail" class="screen">
+ <button class="back" onclick="show('categories')">→ برگشت به دسته‌ها</button>
+ <div class="detail-head" id="detailHead"></div>
+ <div class="section-title"><div><small>ارائه‌دهندگان</small><h2>فعالان این حوزه</h2></div><button class="text-btn" onclick="toggleCategoryFilter()">فیلترها</button></div>
+ <div id="providerResults" class="provider-grid"></div>
+</section>
+<section id="wallet" class="screen">
+ <div class="page-head"><span class="kicker">پرداخت و تسویه</span><h1>کیف پول</h1><p>شارژ، پرداخت، برگشت وجه و تسویه با سوابق روشن.</p></div>
+ <div class="wallet"><small>موجودی فعلی</small><h2>۰ <span>تومان</span></h2><button onclick="demoWalletTopup()">＋ شارژ آزمایشی کیف پول</button></div>
+ <div class="section-title"><h2>تراکنش‌ها</h2></div><div id="walletTransactions" class="list-menu"></div>
+ <p class="disclaimer">نسخه پیش‌نمایش — پرداخت واقعی هنوز فعال نیست.</p>
+</section>
+<section id="partner" class="screen">
+ <div class="page-head"><span class="kicker">ویژه ارائه‌دهندگان خدمات</span><h1>پنل همکاران</h1><p>برای ثبت نمونه‌کار، قیمت و مدیریت درخواست‌ها.</p></div>
+ <div class="partner-card"><span class="big-icon">🤝</span><h2>به خانواده هماهنگ بپیوند</h2><p>عکاس، تالار، گل‌فروش، خواننده، نوازنده و تمام فعالان مراسم می‌توانند صفحه اختصاصی داشته باشند.</p><button onclick="show('providerRegister')">ثبت‌نام به‌عنوان همکار</button></div>
+ <div class="list-menu"><div onclick="show('providerRegister')">🖼️ <span>ثبت نمونه‌کار و گالری</span> <b>›</b></div><div onclick="show('providerRegister')">💵 <span>تعریف قیمت و پکیج</span> <b>›</b></div><div onclick="show('providerRegister')">📆 <span>مدیریت درخواست و رزرو</span> <b>›</b></div><div onclick="show('admin')">🪪 <span>پنل مدیریت (دمو)</span> <b>›</b></div></div>
+</section>
+<section id="profile" class="screen"><div class="page-head"><span class="kicker">حساب کاربری</span><h1>ورود / ثبت‌نام</h1><p>پروفایل آزمایشی در همین مرورگر ذخیره می‌شود.</p></div><div class="login-card"><label>نام و نام خانوادگی</label><input id="userName" placeholder="نام شما"><label>شماره موبایل</label><input id="userPhone" placeholder="09xxxxxxxxx" inputmode="tel"><button onclick="saveProfile()">ذخیره پروفایل آزمایشی</button><small>کد پیامکی واقعی هنوز متصل نیست. این ورود فقط برای آزمایش رابط است.</small></div><div class="section-title"><h2>مراسم من</h2><button class="text-btn" onclick="show('planner')">برنامه‌ریزی ←</button></div><div id="myProfileSummary" class="empty-state">پروفایل هنوز ذخیره نشده.</div></section>
+<section id="planner" class="screen"><div class="page-head"><span class="kicker">برنامه‌ریزی مراسم</span><h1>مراسم من</h1><p>جزئیات رو ثبت کن و کارهای ضروری رو پیگیری کن.</p></div><div class="login-card"><label>عنوان مراسم</label><input id="eventTitle" placeholder="مثلاً جشن عروسی"><label>تاریخ مراسم</label><input id="eventDate" type="date"><label>شهر</label><input id="eventCity" placeholder="شهر برگزاری"><label>بودجه تقریبی (تومان)</label><input id="eventBudget" inputmode="numeric" placeholder="مثلاً 500000000"><button onclick="saveEvent()">ذخیره برنامه</button></div><div class="section-title"><h2>چک‌لیست</h2></div><div id="eventChecklist" class="list-menu"></div></section>
+<section id="providerRegister" class="screen"><div class="page-head"><span class="kicker">ثبت درخواست همکاری</span><h1>ثبت کسب‌وکار</h1><p>اطلاعات برای بررسی مدیر ارسال می‌شود. (در این نسخه آزمایشی داخل مرورگر ذخیره خواهد شد.)</p></div><div class="login-card"><label>نام کسب‌وکار / نام شما</label><input id="providerName" placeholder="نام مجموعه"><label>دسته خدمات</label><select id="providerCategory"></select><label>شهر</label><input id="providerCity" placeholder="شهر"><label>شماره تماس</label><input id="providerPhone" inputmode="tel" placeholder="09xxxxxxxxx"><label>توضیحات خدمات</label><textarea id="providerDescription" rows="3" placeholder="خدمات، تجربه، پکیج‌ها..."></textarea><label>قیمت پایه (تومان)</label><input id="providerPrice" inputmode="numeric" placeholder="قیمت پایه"><button onclick="submitProvider()">ارسال درخواست همکاری</button></div></section>
+<section id="admin" class="screen"><div class="page-head"><span class="kicker">مدیریت هماهنگ</span><h1>پنل مدیر — حالت آزمایشی</h1><p>در نسخه واقعی، این بخش فقط برای حساب مدیر و با احراز هویت امن در دسترس خواهد بود.</p></div><div class="section-title"><h2>درخواست‌های همکاران</h2></div><div id="adminProviders" class="list-menu"></div><div class="section-title"><h2>کاربران و مراسم</h2></div><div id="adminStats" class="stats-grid"></div></section>
+</main>
+<nav class="bottom-nav">
+ <button class="nav active" onclick="show('home')"><span>⌂</span>خانه</button><button class="nav" onclick="show('categories')"><span>▦</span>خدمات</button><button class="nav" onclick="show('wallet')"><span>◈</span>کیف پول</button><button class="nav" onclick="show('partner')"><span>♧</span>همکاران</button><button class="nav" onclick="show('profile')"><span>♙</span>حساب</button>
+<button class="nav" onclick="show('planner')"><span>✦</span>مراسم</button></nav>
+<script src="app.js"></script>
+</body></html>
