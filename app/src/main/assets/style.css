@@ -16,3 +16,149 @@ main{max-width:1120px;margin:auto;padding:22px 18px}.screen{display:none}.screen
 @media(max-width:370px){.category-card{gap:7px;padding:9px}.category-icon{width:40px;height:40px}.category-card b{font-size:11px}}
 .provider-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:14px 0}.provider-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px;display:flex;gap:13px;align-items:flex-start}.provider-avatar{width:54px;height:54px;flex-shrink:0;display:grid;place-items:center;border-radius:17px;background:#f1e8ef;color:var(--wine);font-weight:800;font-size:22px}.provider-info{flex:1;min-width:0}.provider-info>b{display:block;font-size:14px}.provider-info small{display:block;color:var(--muted);font-size:11px;margin-top:4px}.provider-info p{font-size:12px;line-height:1.8;color:var(--muted)}.provider-info strong{display:block;font-size:11px;color:var(--wine);margin:8px 0}.provider-info button,.action-btn{border:1px solid #e5d6df;background:#f7f1f5;color:var(--wine);padding:8px 11px;border-radius:10px;font-size:11px;margin:4px 4px 0 0}.provider-actions{display:flex;flex-wrap:wrap}.login-card select,.login-card textarea{width:100%;border:1px solid var(--line);border-radius:11px;padding:11px;margin:0 0 12px;font:inherit;background:white}.login-card textarea{resize:vertical}.login-card input[type=date]{direction:ltr}.check-row,.admin-row{padding:14px;border-bottom:1px solid var(--line);font-size:12px}.check-row:last-child,.admin-row:last-child{border-bottom:0}.check-row input{accent-color:var(--wine);margin-left:8px}.admin-row{display:flex;justify-content:space-between;gap:15px;align-items:center}.admin-row small{display:block;color:var(--muted);margin-top:4px}.admin-row p{color:var(--muted);font-size:11px}.admin-row button{border:0;padding:8px 12px;border-radius:9px;margin:3px}.approve{background:#e7f2e8;color:#326a38}.reject{background:#f8e7e9;color:#963d52}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.stat{background:white;border:1px solid var(--line);border-radius:14px;padding:15px;text-align:center}.stat b{display:block;font-size:23px;color:var(--wine)}.stat small{color:var(--muted);font-size:11px}.action-btn{margin-top:10px}.wallet{margin-bottom:15px}
 @media(max-width:650px){.provider-grid{grid-template-columns:1fr}.provider-card{padding:12px}.stats-grid{grid-template-columns:repeat(2,1fr)}.admin-row{align-items:flex-start;flex-direction:column}.admin-row button{margin-right:0}.bottom-nav .nav{font-size:9px}.bottom-nav .nav span{font-size:19px}}
+/* HAMAHANG LUXURY DESIGN V2 */
+/* Royal Purple & Gold */
+
+:root {
+  --wine: #32145c;
+  --plum: #58318a;
+  --pink: #eee5fa;
+  --rose: #a77bd4;
+  --gold: #d5ae62;
+  --ink: #241b31;
+  --muted: #82768f;
+  --bg: #faf8fd;
+  --white: #ffffff;
+  --line: #eae2f1;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.header {
+  background: rgba(255,255,255,.98);
+  box-shadow: 0 3px 18px #32145c12;
+}
+
+.brandmark {
+  background: linear-gradient(145deg,#32145c,#8050a8);
+  border: 1px solid var(--gold);
+  box-shadow: 0 4px 12px #32145c25;
+}
+
+.profile {
+  background: #eee5fa;
+  color: var(--wine);
+}
+
+.hero {
+  background: linear-gradient(120deg,#24103f,#48216f 60%,#79509a);
+  border: 1px solid #d5ae6255;
+  box-shadow: 0 12px 32px #32145c20;
+}
+
+.hero h1 em {
+  color: #e9c77e;
+}
+
+.hero-btn {
+  background: linear-gradient(135deg,#f5e5b8,#d5ae62);
+  color: #32145c;
+  box-shadow: 0 5px 15px #0002;
+}
+
+.searchbar,
+.category-card,
+.login-card,
+.list-menu,
+.stat,
+.provider-card {
+  border-color: #e8def0;
+  box-shadow: 0 5px 18px #32145c09;
+}
+
+.category-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 9px 22px #32145c16;
+}
+
+.category-icon {
+  background: linear-gradient(145deg,#f5effb,#e9ddf5);
+}
+
+.tip {
+  background: linear-gradient(110deg,#f1eafa,#fff8e9);
+  border: 1px solid #e7d7b4;
+}.wallet {
+  background: linear-gradient(125deg,#24103f,#58318a 65%,#9166ad);
+  border: 1px solid var(--gold);
+  box-shadow: 0 12px 28px #32145c20;
+  margin-bottom: 15px;
+}
+
+.wallet button {
+  background: linear-gradient(135deg,#f5e5b8,#d5ae62);
+  color: #32145c;
+}
+
+.bottom-nav {
+  background: rgba(255,255,255,.98);
+  box-shadow: 0 -5px 20px #32145c0b;
+}
+
+.nav.active {
+  color: #58318a;
+}
+
+.nav.active span {
+  color: #c29a4e;
+}
+
+.section-title h2,
+.page-head h1 {
+  color: #32145c;
+}
+
+.text-btn,
+.back {
+  color: #9162b5;
+}
+
+.detail-head {
+  background: linear-gradient(120deg,#eee5f8,#fff9ed);
+  border: 1px solid #e8d8b6;
+}
+
+.partner-card {
+  background: linear-gradient(135deg,#f0e8fa,#fff8ed);
+  border: 1px solid #e8d8b6;
+}
+
+.provider-avatar {
+  background: #eee5fa;
+  color: #32145c;
+}
+
+.provider-info strong {
+  color: #58318a;
+}
+
+.provider-info button,
+.action-btn {
+  border-color: #dfd0eb;
+  background: #f5effb;
+  color: #58318a;
+}
+
+.login-card button,
+.partner-card button {
+  background: linear-gradient(120deg,#32145c,#70449a);
+}
+
+@media(max-width:600px) {
+  .hero {
+    border-radius: 22px;
+  }
+}
