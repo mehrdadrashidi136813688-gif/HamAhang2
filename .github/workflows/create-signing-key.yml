@@ -1,0 +1,34 @@
+name: Create Hamahang Signing Key
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  create-key:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate permanent keystore
+        env:
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+        run: |
+          keytool -genkeypair \
+            -v \
+            -keystore hamahang-release.jks \
+            -alias hamahang \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000 \
+            -storepass "$KEYSTORE_PASSWORD" \
+            -keypass "$KEYSTORE_PASSWORD" \
+            -dname "CN=Hamahang, OU=App, O=Hamahang, L=Unknown, ST=Unknown, C=IR"
+
+      - name: Save keystore securely as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hamahang-signing-key
+          path: hamahang-release.jks
+          retention-days: 1
