@@ -1,10 +1,13 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#542c45"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#17082f"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>هماهنگ | خدمات مراسم</title><link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="hamahangSplash" aria-label="خوش آمدید به هماهنگ">
+ <div class="splash-loading">هماهنگ<span>همراه شما در زندگی بهتر</span><div class="splash-bar"><i></i></div><span>در حال آماده‌سازی...</span></div>
+</div>
 <header class="header">
  <div class="brand"><div class="brandmark">ه</div><div><b>هماهنگ</b><small>مراسمت، با سلیقه تو</small></div></div>
  <button class="profile" onclick="show('profile')">♙</button>
@@ -32,6 +35,10 @@
  <div class="section-title"><div><small>ارائه‌دهندگان</small><h2>فعالان این حوزه</h2></div><button class="text-btn" onclick="toggleCategoryFilter()">فیلترها</button></div>
  <div id="providerResults" class="provider-grid"></div>
 </section>
+<section id="scan" class="screen">
+ <div class="page-head"><span class="kicker">اسکن هماهنگ</span><h1>اسکن کد همکار</h1><p>برای بررسی کد تخفیف یا اطلاعات همکار، در نسخه‌های بعدی دوربین فعال می‌شود.</p></div>
+ <div class="empty-state"><div class="empty-icon">▦</div><b>اسکنر در حال آماده‌سازی است</b><p>این بخش فعلاً نمایشی است و هنوز به دوربین متصل نشده.</p></div>
+</section>
 <section id="wallet" class="screen">
  <div class="page-head"><span class="kicker">پرداخت و تسویه</span><h1>کیف پول</h1><p>شارژ، پرداخت، برگشت وجه و تسویه با سوابق روشن.</p></div>
  <div class="wallet"><small>موجودی فعلی</small><h2>۰ <span>تومان</span></h2><button onclick="demoWalletTopup()">＋ شارژ آزمایشی کیف پول</button></div>
@@ -49,7 +56,18 @@
 <section id="admin" class="screen"><div class="page-head"><span class="kicker">مدیریت هماهنگ</span><h1>پنل مدیر — حالت آزمایشی</h1><p>در نسخه واقعی، این بخش فقط برای حساب مدیر و با احراز هویت امن در دسترس خواهد بود.</p></div><div class="section-title"><h2>درخواست‌های همکاران</h2></div><div id="adminProviders" class="list-menu"></div><div class="section-title"><h2>کاربران و مراسم</h2></div><div id="adminStats" class="stats-grid"></div></section>
 </main>
 <nav class="bottom-nav">
- <button class="nav active" onclick="show('home')"><span>⌂</span>خانه</button><button class="nav" onclick="show('categories')"><span>▦</span>خدمات</button><button class="nav" onclick="show('wallet')"><span>◈</span>کیف پول</button><button class="nav" onclick="show('partner')"><span>♧</span>همکاران</button><button class="nav" onclick="show('profile')"><span>♙</span>حساب</button>
-<button class="nav" onclick="show('planner')"><span>✦</span>مراسم</button></nav>
+ <button class="nav active" onclick="show('home')"><span>⌂</span>خانه</button>
+ <button class="nav" onclick="show('categories')"><span>▦</span>خدمات</button>
+ <button class="nav" onclick="show('scan')"><span>▣</span>اسکن</button>
+ <button class="nav" onclick="show('wallet')"><span>◈</span>کیف پول</button>
+ <button class="nav" onclick="show('partner')"><span>♧</span>همکاران</button>
+ <button class="nav" onclick="show('profile')"><span>♙</span>حساب</button>
+</nav>
 <script src="app.js"></script>
+<script>
+window.addEventListener('load',function(){
+ const s=document.getElementById('hamahangSplash');
+ if(s) setTimeout(()=>s.classList.add('hide'),2800);
+});
+</script>
 </body></html>

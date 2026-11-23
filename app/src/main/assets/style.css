@@ -16,149 +16,55 @@ main{max-width:1120px;margin:auto;padding:22px 18px}.screen{display:none}.screen
 @media(max-width:370px){.category-card{gap:7px;padding:9px}.category-icon{width:40px;height:40px}.category-card b{font-size:11px}}
 .provider-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:14px 0}.provider-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px;display:flex;gap:13px;align-items:flex-start}.provider-avatar{width:54px;height:54px;flex-shrink:0;display:grid;place-items:center;border-radius:17px;background:#f1e8ef;color:var(--wine);font-weight:800;font-size:22px}.provider-info{flex:1;min-width:0}.provider-info>b{display:block;font-size:14px}.provider-info small{display:block;color:var(--muted);font-size:11px;margin-top:4px}.provider-info p{font-size:12px;line-height:1.8;color:var(--muted)}.provider-info strong{display:block;font-size:11px;color:var(--wine);margin:8px 0}.provider-info button,.action-btn{border:1px solid #e5d6df;background:#f7f1f5;color:var(--wine);padding:8px 11px;border-radius:10px;font-size:11px;margin:4px 4px 0 0}.provider-actions{display:flex;flex-wrap:wrap}.login-card select,.login-card textarea{width:100%;border:1px solid var(--line);border-radius:11px;padding:11px;margin:0 0 12px;font:inherit;background:white}.login-card textarea{resize:vertical}.login-card input[type=date]{direction:ltr}.check-row,.admin-row{padding:14px;border-bottom:1px solid var(--line);font-size:12px}.check-row:last-child,.admin-row:last-child{border-bottom:0}.check-row input{accent-color:var(--wine);margin-left:8px}.admin-row{display:flex;justify-content:space-between;gap:15px;align-items:center}.admin-row small{display:block;color:var(--muted);margin-top:4px}.admin-row p{color:var(--muted);font-size:11px}.admin-row button{border:0;padding:8px 12px;border-radius:9px;margin:3px}.approve{background:#e7f2e8;color:#326a38}.reject{background:#f8e7e9;color:#963d52}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.stat{background:white;border:1px solid var(--line);border-radius:14px;padding:15px;text-align:center}.stat b{display:block;font-size:23px;color:var(--wine)}.stat small{color:var(--muted);font-size:11px}.action-btn{margin-top:10px}.wallet{margin-bottom:15px}
 @media(max-width:650px){.provider-grid{grid-template-columns:1fr}.provider-card{padding:12px}.stats-grid{grid-template-columns:repeat(2,1fr)}.admin-row{align-items:flex-start;flex-direction:column}.admin-row button{margin-right:0}.bottom-nav .nav{font-size:9px}.bottom-nav .nav span{font-size:19px}}
-/* HAMAHANG LUXURY DESIGN V2 */
-/* Royal Purple & Gold */
 
-:root {
-  --wine: #32145c;
-  --plum: #58318a;
-  --pink: #eee5fa;
-  --rose: #a77bd4;
-  --gold: #d5ae62;
-  --ink: #241b31;
-  --muted: #82768f;
-  --bg: #faf8fd;
-  --white: #ffffff;
-  --line: #eae2f1;
-}
 
-body {
-  background: var(--bg);
-  color: var(--ink);
-}
-
-.header {
-  background: rgba(255,255,255,.98);
-  box-shadow: 0 3px 18px #32145c12;
-}
-
-.brandmark {
-  background: linear-gradient(145deg,#32145c,#8050a8);
-  border: 1px solid var(--gold);
-  box-shadow: 0 4px 12px #32145c25;
-}
-
-.profile {
-  background: #eee5fa;
-  color: var(--wine);
-}
-
-.hero {
-  background: linear-gradient(120deg,#24103f,#48216f 60%,#79509a);
-  border: 1px solid #d5ae6255;
-  box-shadow: 0 12px 32px #32145c20;
-}
-
-.hero h1 em {
-  color: #e9c77e;
-}
-
-.hero-btn {
-  background: linear-gradient(135deg,#f5e5b8,#d5ae62);
-  color: #32145c;
-  box-shadow: 0 5px 15px #0002;
-}
-
-.searchbar,
-.category-card,
-.login-card,
-.list-menu,
-.stat,
-.provider-card {
-  border-color: #e8def0;
-  box-shadow: 0 5px 18px #32145c09;
-}
-
-.category-card:hover {
-  border-color: var(--gold);
-  box-shadow: 0 9px 22px #32145c16;
-}
-
-.category-icon {
-  background: linear-gradient(145deg,#f5effb,#e9ddf5);
-}
-
-.tip {
-  background: linear-gradient(110deg,#f1eafa,#fff8e9);
-  border: 1px solid #e7d7b4;
-}.wallet {
-  background: linear-gradient(125deg,#24103f,#58318a 65%,#9166ad);
-  border: 1px solid var(--gold);
-  box-shadow: 0 12px 28px #32145c20;
-  margin-bottom: 15px;
-}
-
-.wallet button {
-  background: linear-gradient(135deg,#f5e5b8,#d5ae62);
-  color: #32145c;
-}
-
-.bottom-nav {
-  background: rgba(255,255,255,.98);
-  box-shadow: 0 -5px 20px #32145c0b;
-}
-
-.nav.active {
-  color: #58318a;
-}
-
-.nav.active span {
-  color: #c29a4e;
-}
-
-.section-title h2,
-.page-head h1 {
-  color: #32145c;
-}
-
-.text-btn,
-.back {
-  color: #9162b5;
-}
-
-.detail-head {
-  background: linear-gradient(120deg,#eee5f8,#fff9ed);
-  border: 1px solid #e8d8b6;
-}
-
-.partner-card {
-  background: linear-gradient(135deg,#f0e8fa,#fff8ed);
-  border: 1px solid #e8d8b6;
-}
-
-.provider-avatar {
-  background: #eee5fa;
-  color: #32145c;
-}
-
-.provider-info strong {
-  color: #58318a;
-}
-
-.provider-info button,
-.action-btn {
-  border-color: #dfd0eb;
-  background: #f5effb;
-  color: #58318a;
-}
-
-.login-card button,
-.partner-card button {
-  background: linear-gradient(120deg,#32145c,#70449a);
-}
-
-@media(max-width:600px) {
-  .hero {
-    border-radius: 22px;
-  }
-}
+/* ===== HAMAHANG LUXURY PURPLE & GOLD ===== */
+:root{--wine:#17082f;--plum:#32105d;--pink:#eadcfb;--rose:#b88bea;--gold:#f4c45e;--ink:#f8f1ff;--muted:#c8b8d8;--bg:#10051f;--white:#211039;--line:#754b91}
+html{background:#10051f}
+body{background:radial-gradient(ellipse at 50% -15%,#512477 0,#1a0a31 45%,#0b0417 100%);color:#fff;padding-bottom:88px}
+.header{background:rgba(12,4,27,.96);border-bottom:1px solid #d7a94d66;color:#fff;backdrop-filter:blur(14px)}
+.brandmark{background:linear-gradient(145deg,#ffe7a0,#c58b25);color:#32104f;border:2px solid #fff0c4;box-shadow:0 0 18px #f4c45e66}
+.brand b{color:#ffd36e}.brand small{color:#d9c6eb}
+.profile{background:#2a1245;color:#fff;border:1px solid #d8ad5d}
+main{padding-top:18px}
+.hero{background:linear-gradient(125deg,#17072fdd,#42146bdd),url('splash-luxury.png') center 47%/cover;border:1px solid #e6b84f;border-radius:25px;min-height:310px;box-shadow:0 12px 36px #0008,inset 0 0 35px #160629}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#17072f44,#17072fbb);pointer-events:none}
+.hero-text{position:relative;z-index:2}.hero .kicker{color:#f5d27d}.hero h1{color:#fff;text-shadow:0 2px 12px #000}.hero h1 em{color:#ffd46d}.hero p{color:#f3e9ff}
+.hero-visual{opacity:.82}.ring{border-color:#f6d47d;box-shadow:0 0 0 22px #f6d47d12,0 0 0 44px #f6d47d0a}.bouquet{filter:drop-shadow(0 10px 18px #000)}
+.hero-btn,.searchbar button{background:linear-gradient(135deg,#ffe7a0,#e7a92e);color:#27103e;font-weight:800;border:1px solid #fff0b7;box-shadow:0 4px 18px #e7a92e55}
+.searchbar,.category-card,.login-card,.list-menu,.stat,.provider-card,.empty-state{background:linear-gradient(145deg,#241039,#170927);border:1px solid #80559c;color:#fff;box-shadow:0 6px 20px #0005}
+.searchbar input{background:transparent;color:#fff}.searchbar input::placeholder{color:#bca9ce}
+.section-title h2,.page-head h1{color:#ffda82}.section-title small,.kicker{color:#d6b2f5}
+.text-btn,.back{color:#f2c96d}
+.category-card{border-radius:17px}.category-card b,.provider-info>b{color:#fff}.category-card small,.provider-info small,.provider-info p{color:#cbb8df}
+.category-card:hover{border-color:#f4c45e;box-shadow:0 0 20px #dcae4d35}
+.category-icon,.provider-avatar{background:linear-gradient(145deg,#4b2670,#211039)!important;color:#ffd56d;border:1px solid #b98a4e}
+.tip{background:linear-gradient(110deg,#2c1247,#1a0a2c);border:1px solid #c99b50;color:#ffe4a0}
+.tip p{color:#d8c7e8}
+.wallet{background:radial-gradient(circle at 20% 15%,#713b9c,#2b0e4c 58%,#160725);border:1px solid #efc35e;box-shadow:0 12px 30px #0007}
+.wallet h2{color:#ffdc83}.wallet button{background:linear-gradient(135deg,#ffe7a0,#e7a92e);color:#27103e}
+.bottom-nav{background:rgba(12,4,27,.98);border-top:1px solid #d5a94d88;box-shadow:0 -8px 25px #0008}
+.nav{color:#c8b7d9}.nav.active{color:#ffd36e}.nav.active span{color:#ffd36e}
+.detail-head,.partner-card{background:linear-gradient(120deg,#32134f,#1b0b2e);border:1px solid #d5a94d;color:#fff}
+.login-card label{color:#f5d98f}.login-card input,.login-card select,.login-card textarea{background:#170927;color:#fff;border-color:#76518e}
+.login-card input::placeholder,.login-card textarea::placeholder{color:#a995bd}
+.login-card button,.partner-card button{background:linear-gradient(135deg,#ffe7a0,#d99b27);color:#28103e;font-weight:800}
+.list-menu div{border-color:#593a70;color:#fff}
+.list-menu span{color:#fff}
+.disclaimer{color:#d3c0e5}
+.provider-info strong{color:#f4ce78}
+.provider-info button,.action-btn{background:#32164e;color:#ffe3a0;border-color:#9669ad}
+.admin-row{color:#fff;border-color:#593a70}
+.approve{background:#214b35;color:#c8ffdb}.reject{background:#63263c;color:#ffe0e8}
+.screen{animation:screenIn .25s ease}
+@keyframes screenIn{from{opacity:.5;transform:translateY(5px)}to{opacity:1;transform:none}}
+/* splash overlay */
+#hamahangSplash{position:fixed;inset:0;z-index:9999;background:#10051f url('splash-luxury.png') center center/cover no-repeat;display:flex;align-items:flex-end;justify-content:center;transition:opacity .7s ease,visibility .7s ease}
+#hamahangSplash:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#10051f05 55%,#10051f55 80%,#10051f)}
+#hamahangSplash .splash-loading{position:relative;z-index:1;margin-bottom:8vh;color:#ffe19a;text-align:center;font-weight:800;text-shadow:0 2px 10px #000}
+#hamahangSplash .splash-loading span{display:block;margin-top:10px;font-size:13px;color:#fff}
+#hamahangSplash .splash-bar{width:62vw;max-width:300px;height:7px;border:1px solid #f7d47c;border-radius:20px;overflow:hidden;margin:12px auto;background:#1b0a2d}
+#hamahangSplash .splash-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ffe9a7,#d99b27);animation:splashProgress 2.8s linear forwards}
+@keyframes splashProgress{to{width:100%}}
+#hamahangSplash.hide{opacity:0;visibility:hidden;pointer-events:none}
+@media(max-width:600px){.hero{min-height:270px;background-position:center}.hero-visual{width:90px}.bottom-nav{padding-top:9px}}
